@@ -1,0 +1,17 @@
+@import '_variables';		
+@import '_general';			
+@import '_typography';		
+@import '_mixins';			
+@import '_image';			
+@import '_buttons';		    
+@import '_debug';		    
+
+
+// COMPONENTS
+@import 'components/_header';      
+@import 'components/_about-me';      
+@import 'components/_works';      
+@import 'components/_footer';      
+
+
+@import '_responsive';      

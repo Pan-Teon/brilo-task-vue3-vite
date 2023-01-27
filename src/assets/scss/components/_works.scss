@@ -1,0 +1,50 @@
+.works {
+
+    .works__heading {
+        text-align: left;
+    }
+
+    .flex-box {
+        gap: 3rem;
+        padding-bottom: 5rem;
+    }
+
+    .works__block {
+        width: 100%;
+        transition: .4s;
+
+        &:hover,
+        &:focus {
+            filter: grayscale(1);
+        }
+
+        figure {
+            position: relative;
+        }
+
+        img {
+            height: 240px;
+        }
+
+        .works__img-overlay {
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border: 1px solid $color-base;
+        }
+
+    }
+
+    .works__item-content {
+        background-color: $color-main;
+        color: $color-base;
+        text-align: left;
+        padding: 40px 20px;
+    }
+
+}

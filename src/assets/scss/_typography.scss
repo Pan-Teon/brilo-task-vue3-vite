@@ -1,0 +1,60 @@
+/**
+** TYPOGRAPHY
+*/
+
+h1,h2,h3,h4,h5,h6 {
+	color: $color-base;
+	font-family: $font-heading;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: clamp(3rem, 8vw, 4rem);
+	margin-bottom: 2.5rem;
+	font-weight: 100;
+}
+
+h2 {
+	font-size: clamp(1.5rem, 7vw, 2.5rem);
+	margin-bottom: 2rem;
+	font-weight: 100;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+
+h4 {
+	font-size: em(20);
+    margin-bottom: em(20, 20);
+}
+
+h5 {
+	font-size: em(18);
+    margin-bottom: em(20, 18);
+}
+
+h6 {
+	font-size: em(16);
+	margin-bottom: em(10, 16);
+
+}
+
+p {
+	font-size: em(16);
+	margin-bottom: em(20, 16);
+	font-weight: 300;
+}
+
+small {
+	font-size: em(15);
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+span {
+	font-size: em(16);
+}
+

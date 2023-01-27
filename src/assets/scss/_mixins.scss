@@ -1,0 +1,35 @@
+//*******************
+//  MIXINS
+//
+
+@mixin box-sizing( $value ) {
+	-webkit-box-sizing: $value;
+	-moz-box-sizing: $value;
+	box-sizing: $value;
+}
+
+@mixin container( $width ) {
+    max-width: $width;
+    margin: 0 auto;
+}
+
+@mixin font-size( $size, $context: 16) {
+	font-size: ($size / $context) + em;
+}
+
+@function em( $size, $context: 16 ) {
+	@return ( $size / $context ) + em;
+}
+
+@mixin selection {
+	::-moz-selection {@content};
+	::selection{@content};
+}
+
+/*----- USEFUL MIXINS ------*/ 
+
+@mixin center-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,80 @@
+/**
+** RESPONSIVE
+*/
+
+@media screen and (max-width: 992px) {
+
+    .flex-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .aboutMe {
+
+        .btn-box-1 {
+            margin: 50px auto 0;
+        }
+
+        .aboutMe__text {
+            width: 100%;
+            text-align: center;
+        }
+
+        .aboutMe__img-box {
+            width: min(400px, 100%);
+        }
+
+    }
+
+    .works {
+
+        .works__heading {
+            text-align: center;
+        }
+
+        .works__item {
+            width: min(350px, 100%);
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .menu {
+        justify-content: center;
+
+        a {
+            padding: 30px 15px;
+        }
+    }
+    
+
+    .aboutMe {
+
+        .flex-box {
+            gap: 5rem;
+        }
+
+        .aboutMe__text {
+            text-align: left;
+        }
+
+    }
+
+    .works {
+
+        .works__heading {
+            text-align: left;
+        }
+
+    }
+
+    section {
+        padding: 3rem 1.25rem;
+    }
+
+}
+
+

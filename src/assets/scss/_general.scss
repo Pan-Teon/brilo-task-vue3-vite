@@ -1,0 +1,89 @@
+/**
+**	GENERAL
+*/
+
+@import 'mixins';
+
+html {
+	@include box-sizing( border-box );
+	
+	--scroll-behavior: smooth;
+    scroll-behavior: smooth;
+	scroll-padding-top: 0rem;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+}
+
+section {
+    padding: 5rem 1.25rem; /* 90px 20px */
+}
+
+@include selection {
+	background-color: $color-base;
+	color: $color-main;
+}
+
+body {
+	background: $color-base;
+	color: $color-text;
+	max-width: 100%;
+	line-height: 1.5;
+	text-align: center;
+	margin: 0;
+	
+	font: {
+		size: $font-size-base;
+		family: $font-text;
+		weight: 400;
+	}
+
+}
+
+.container-max {
+	max-width: em(1920);
+	margin: auto;
+}
+.container {
+	max-width: em(1170);
+	margin: auto;
+}
+
+.main-content {
+    background-color: $color-bg;
+}
+
+a {
+	display: inline-block;
+	color: $color-button;
+	text-decoration: none;
+	transition: .4s;
+
+	&:hover,
+	&:focus {
+		color: lighten($color-button, 15%);
+	}
+
+}
+
+
+//*********
+// EASY STAFF
+//
+
+.flex-box {
+	display: flex;
+}
+

@@ -1,0 +1,24 @@
+//*******************
+// HEADER
+//
+
+.header-main {
+    background-color: #1f464d;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+
+    a {
+        color: $color-base;
+        padding: 30px 20px;
+
+        &:hover,
+        &:focus {
+            color: lighten($color-button, 15%);
+        }
+    }
+
+}
